@@ -57,6 +57,10 @@ p > a {
     color: black;
 }
 
+a {
+    font-family: DMSerif, Georgia, Arial, Helvetica, sans-serif;
+}
+
 /* navigation Styles */
 nav {
     display: block;
@@ -91,7 +95,7 @@ nav > ul > li > a > img {
     height: 3em;
 }
 
-nav > ul > li > a:hover {
+nav > ul > li > a:hover, nav > ul > li > a::selection {
     background-color: rgb(247, 184, 184);
 }
 
@@ -116,7 +120,7 @@ footer > p > a {
     color: white;
 }
 
-footer > p > img {
+footer > p > a > img {
     width: auto;
     height: 5em;
     position: relative;

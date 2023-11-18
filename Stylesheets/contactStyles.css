@@ -4,7 +4,7 @@
    Author: James Owen
    Date:   November 17th, 2023
 
-   Filename: homeStyles.css
+   Filename: contactStyles.css
    
 
 */
@@ -14,12 +14,13 @@
 section {
     padding: 3em 8em;
     display: block;
-    height: 45em;
+    overflow: hidden;
 }
 
 section > div.topTxt {
     width: 19em;
     padding: 2em 0em;
+    margin-bottom: 2em;
     text-align: center;
     background-color: rgb(145, 61, 61);
     border: 5px double black;
@@ -30,13 +31,100 @@ section > div.topTxt {
 
 section > form#createMsg > fieldset#sendMsg, section > div.contact {
     background-color: rgb(218, 156, 156);
+    border: 3px solid black;
     border-radius: 1em;
     width: 45%;
     float: left;
+    margin: 0em 1em 2em 1em;
+}
+
+section > form#createMsg > fieldset#sendMsg > legend {
+    background-color: red;
+    color: black;
+    font-weight: 800;
+    font-size: 2em;
 }
 
 /* form row styles */
 div.formRow > :not(label) {
     display: block;
     width: 18em;
+}
+
+/* input styles */
+
+div.formRow > input {
+    margin: .5em 0em 1.5em 0em;
+    background-color: rgb(238, 206, 206);
+    border: 2px double rgb(95, 11, 11);
+    border-radius: 2em;
+    height: 2em;
+}
+
+div.formRow > input[type="text"]#name {
+    width: 8em;
+    margin-right: 3em;
+}
+
+div.formRow > input[type="email"]#email {
+    width: 10em;
+    margin-right: 3em;
+}
+
+div.buttons > input[type="submit"], div.buttons > input[type="reset"] {
+    color: white;
+    height: 2em;
+    width: 5em;
+    background-color: red;
+    border: 2px solid rgb(95, 11, 11);
+    border-radius: 2em;
+    box-shadow: .25em .25em rgba(95, 11, 11, .7);
+
+}
+
+div.buttons > input[type="submit"]:hover, div.buttons > input[type="reset"]:hover {
+    color: red;
+    background-color: white;
+}
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: .5em;
+    margin-bottom: 1em;
+    height: auto;
+    width: 100%;
+    background-color: rgb(238, 206, 206);
+    border: 2px double rgb(95, 11, 11);
+    border-radius: .75em;
+}
+
+/* label styles */
+div.formRow > label {
+    font-size: 1.25em;
+}
+
+/* Contact info styles */
+div.contact {
+    position: relative;
+    top: 1em;
+}
+
+div.contact > h1 {
+    font-weight: 800;
+    font-size: 2em;
+    margin: 0.5em;
+    width: auto;
+    height: 100%;
+    background-color: red;
+    padding: .25em;
+}
+
+div.contact > p {
+    margin: .75em;
+}
+
+div.contact > p > a > img {
+    height: auto;
+    width: 1.5em;
 }

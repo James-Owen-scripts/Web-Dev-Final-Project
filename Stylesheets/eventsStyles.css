@@ -1,0 +1,52 @@
+/*
+
+   Final Project
+   Author: James Owen
+   Date:   November 17th, 2023
+
+   Filename: eventStyles.css
+   
+
+*/
+
+/* header styles */
+
+div.pageHeader {
+    width: 19em;
+    padding: 2em 0em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: rgb(145, 61, 61);
+    border: 5px double black;
+    box-shadow: 1em -.75em rgba(49, 0, 0, 0.7);
+    margin: 2em 0em 4em 2.5em;
+}
+
+/* main div styles */
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    padding: 2.5em;
+}
+
+/* event div styles */
+
+div.grid > div {
+    position: relative;
+    background-color: rgb(145, 61, 61);
+    color: black;
+    padding: 2em;
+    padding-bottom: 20em;
+    overflow: hidden;
+    border-radius: 1em;
+    border: 3px double black;
+}
+
+div.grid > div > img {
+    margin-top: 2em;
+    width: 70%;
+    height: auto;
+    position: absolute;
+    bottom: 2em;
+}
