@@ -1,0 +1,42 @@
+/*
+
+   Final Project
+   Author: James Owen
+   Date:   November 17th, 2023
+
+   Filename: reset.css
+   
+
+*/
+
+/* Structural Styles */
+article, aside, figcaption, figure, footer, header, main, section {
+    display: block;
+}
+
+/* Typographic Styles */
+address, article, aside, blockquote, body, div, dl, dt, dd, em, figure, footer, h1, h2, h3, header, html, img, li, main, nav, ol, p, section, span, ul {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+nav a {
+   text-decoration: none;
+}
+body {
+   line-height: 1;
+}
+
+footer {
+  margin: 0em;
+}

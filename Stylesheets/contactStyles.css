@@ -1,0 +1,42 @@
+/*
+
+   Final Project
+   Author: James Owen
+   Date:   November 17th, 2023
+
+   Filename: homeStyles.css
+   
+
+*/
+
+/* Section Styles */
+
+section {
+    padding: 3em 8em;
+    display: block;
+    height: 45em;
+}
+
+section > div.topTxt {
+    width: 19em;
+    padding: 2em 0em;
+    text-align: center;
+    background-color: rgb(145, 61, 61);
+    border: 5px double black;
+    box-shadow: 1em -.75em rgba(49, 0, 0, 0.7);
+}
+
+/* Form Layout Styles */
+
+section > form#createMsg > fieldset#sendMsg, section > div.contact {
+    background-color: rgb(218, 156, 156);
+    border-radius: 1em;
+    width: 45%;
+    float: left;
+}
+
+/* form row styles */
+div.formRow > :not(label) {
+    display: block;
+    width: 18em;
+}

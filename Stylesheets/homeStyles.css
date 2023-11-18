@@ -1,0 +1,84 @@
+/*
+
+   Final Project
+   Author: James Owen
+   Date:   November 17th, 2023
+
+   Filename: homeStyles.css
+   
+
+*/
+
+/* Section Styles */
+
+section {
+    background: rgb(151, 103, 103);
+    padding: 2em 2em;
+    display: block;
+}
+
+/* row-1 styles */
+
+div#row-1 > section {
+    border: 3px double black;
+    position: relative;
+    width: 25em;
+    margin: 2em 2em;
+    height: 25em;
+}
+
+div#row-1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+div#row-1 > section > h1 {
+    margin-bottom: .5em;
+    width: 100%;
+}
+
+div#row-1 > section > a {
+    position: absolute;
+    top: 21em;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    background: red;
+    border-radius: 1.5em;
+}
+
+div#row-1 > section > a:hover {
+    background: rgb(38, 0, 0);
+}
+
+/* row-2 styles */
+
+div#row-2 > section {
+    width: 45em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#row-2 > section#mainVision {
+    border: 3px double black;
+    margin-top: 5em;
+}
+
+div#row-2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    background: rgb(218, 156, 156);
+}
+
+/* row-2 colums */
+
+div#row-2 > section#visionPoints > div {
+    width: 50%;
+    position: relative;
+    float: left;
+    padding: .5em 2em;
+}
