@@ -8,3 +8,48 @@
    
 
 */
+
+/* column styles */
+
+div.col-1 {
+
+}
+
+/* row styles */
+div[class^="row-"] {
+    display: block;
+    background-color: rgb(151, 103, 103);
+    width: 70%;
+    margin: 2% 0% 2% 15%;
+    border-radius: 1em;
+    border: 3px double black;
+}
+
+div[class^="row-"] > dl {
+    margin: 1em 1em;
+}
+
+div[class^="row-"] > dl > dt {
+    margin-bottom: .5em;
+}
+
+div[class^="row-"] > dl > dd {
+    font-size: 1.5em;
+}
+
+div[class^="row-"] > input[type="button"] {
+    margin: 1em 1em;
+    color: white;
+    height: 2em;
+    width: 6em;
+    background-color: red;
+    border: 2px solid rgb(95, 11, 11);
+    border-radius: 2em;
+    box-shadow: .25em .25em rgba(95, 11, 11, .7);
+
+}
+
+div[class^="row-"] > input[type="button"]:hover {
+    color: red;
+    background-color: white;
+}
