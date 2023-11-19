@@ -9,12 +9,6 @@
 
 */
 
-/* column styles */
-
-div.col-1 {
-
-}
-
 /* row styles */
 div[class^="row-"] {
     display: block;

@@ -17,6 +17,41 @@ section {
     display: block;
 }
 
+/* welcome tag styles */
+div.welcomeTag {
+    position: relative;
+    top: -30em;
+    margin-left: 2em;
+    width: 50em;
+    padding: 2em 0em;
+    margin-bottom: 2em;
+    text-align: center;
+    background-color: rgb(145, 61, 61);
+    border: 5px double black;
+    box-shadow: 1em -.75em rgba(49, 0, 0, 0.7);
+}
+
+div.welcomeTag > button#pauseButton {
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+}
+
+div.welcomeTag > button#pauseButton:hover {
+    background-color: white;
+}
+
+/* background video */
+video#backgroundVideo {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /* row-1 styles */
 
 div#row-1 > section {
@@ -28,6 +63,9 @@ div#row-1 > section {
 }
 
 div#row-1 {
+    position: relative;
+    top: -5em;
+    z-index: 1;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -81,4 +119,9 @@ div#row-2 > section#visionPoints > div {
     position: relative;
     float: left;
     padding: .5em 2em;
+}
+
+/* cross reference link styles */
+nav > ul > li#crossRef {
+    float: right;
 }

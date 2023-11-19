@@ -7,6 +7,7 @@
     <link href="Stylesheets/General Styles/reset.css" rel="stylesheet" />
     <link href="Stylesheets/General Styles/mainStyles.css" rel="stylesheet" />
     <link href="Stylesheets/homeStyles.css" rel="stylesheet" />
+    <script src="Scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -19,9 +20,17 @@
                 <li><a href="HTML Files/events.html">Events</a></li>
                 <li><a href="HTML Files/programs.html">Programs</a></li>
                 <li><a href="https://www.ocf-fco.ca/funds/en-indigenous-clean-energy-charitable-fund/">Donate</a></li>
+                <li id="crossRef"><a href="HTML Files/crossReference.html">Cross-Reference</a></li>
             </ul>
         </nav>
     </header>
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="Resources/Video/ICE-Background.mp4" type="video/mp4" />
+    </video>
+    <div class="welcomeTag">
+        <h1 id="welcome header">Welcome to Indigenous Clean Energy</h1>
+        <button id="pauseButton"></button>
+    </div>
     <div id="row-1">
         <section id="aboutSection">
             <h1>Indigenous Clean Energy</h1>
