@@ -22,13 +22,7 @@ div.pageHeader {
     margin: 2em 0em 4em 2.5em;
 }
 
-/* main div styles */
-div.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
-    padding: 2.5em;
-}
+
 
 /* event div styles */
 
@@ -43,10 +37,58 @@ div.grid > div {
     border: 3px double black;
 }
 
-div.grid > div > img {
-    margin-top: 2em;
-    width: 70%;
-    height: auto;
-    position: absolute;
-    bottom: 2em;
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    /* main div styles */
+    div.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        padding: 2.5em;
+    }
+    div.grid > div > img {
+        margin-top: 2em;
+        width: 70%;
+        height: auto;
+        position: absolute;
+        bottom: 2em;
+    }
+}
+
+/* tablet / small desktop */
+@media only screen and (min-width: 481px) {
+    /* main div styles */
+    div.grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        padding: 2.5em;
+    }
+    div.grid > div > img {
+        margin-top: 2em;
+        width: 40%;
+        height: auto;
+        position: absolute;
+        bottom: 2em;
+    }
+}
+
+
+/* desktop */
+@media only screen and (min-width: 900px) {
+    /* main div styles */
+    div.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        padding: 2.5em;
+    }
+    div.grid > div > img {
+        margin-top: 2em;
+        width: 70%;
+        height: auto;
+        position: absolute;
+        bottom: 2em;
+    }
 }

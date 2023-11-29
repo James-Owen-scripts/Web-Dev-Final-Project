@@ -9,6 +9,216 @@
 
 */
 
+/* mobile */
+@media only screen and (max-width: 480px) {
+    /* welcome tag styles */
+    div.welcomeTag {
+        position: relative;
+        top: -4em;
+        margin-left: .25em;
+        width: 14em;
+        padding: 1em 0em;
+        margin-bottom: 2em;
+    }
+
+    /* row-1 styles */
+
+    div#row-1 > section {
+        border: 3px double black;
+        position: relative;
+        width: 80%;
+        margin: 2em auto;
+        height: 30em;
+    }
+
+    div#row-1 {
+        position: relative;
+        top: -5em;
+        z-index: 1;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    div#row-1 > section > h1 {
+        margin-bottom: .5em;
+        width: 100%;
+    }
+
+    div#row-1 > section > a {
+        position: absolute;
+        top: 40em;
+        color: white;
+        text-decoration: none;
+        padding: .5em;
+        background: red;
+        border-radius: 1.5em;
+        font-size: 8pt;
+    }
+
+    div#row-1 > section > a:hover {
+        background: rgb(38, 0, 0);
+    }
+
+    /* row-2 styles */
+
+    div#row-2 > section {
+        width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* row-2 colums */
+
+    div#row-2 > section#visionPoints > div {
+        width: 95%;
+        padding: .5em 2em;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 481px) {
+    /* welcome tag styles */
+    div.welcomeTag {
+        position: relative;
+        top: -15em;
+        margin-left: 2em;
+        width: 20em;
+        padding: 2em 0em;
+        margin-bottom: 2em;
+    }
+
+    /* row-1 styles */
+
+    div#row-1 > section {
+        border: 3px double black;
+        position: relative;
+        width: 25em;
+        margin: 2em auto;
+        height: 25em;
+    }
+
+    div#row-1 {
+        position: relative;
+        top: -5em;
+        z-index: 1;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    div#row-1 > section > h1 {
+        margin-bottom: .5em;
+        width: 100%;
+    }
+
+    div#row-1 > section > a {
+        position: absolute;
+        top: 21em;
+        color: white;
+        text-decoration: none;
+        padding: .5em;
+        background: red;
+        border-radius: 1.5em;
+    }
+
+    div#row-1 > section > a:hover {
+        background: rgb(38, 0, 0);
+    }
+
+    /* row-2 styles */
+
+    div#row-2 > section {
+        width: 30em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* row-2 colums */
+
+    div#row-2 > section#visionPoints > div {
+        width: 95%;
+        padding: .5em 2em;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 769px) {
+
+    /* welcome tag styles */
+    div.welcomeTag {
+        position: relative;
+        top: -26em;
+        margin-left: 2em;
+        width: 50em;
+        padding: 2em 0em;
+        margin-bottom: 2em;
+    }
+
+    /* row-1 styles */
+
+    div#row-1 > section {
+        border: 3px double black;
+        position: relative;
+        width: 25em;
+        margin: 2em 2em;
+        height: 25em;
+    }
+
+    div#row-1 {
+        position: relative;
+        top: -5em;
+        z-index: 1;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    div#row-1 > section > h1 {
+        margin-bottom: .5em;
+        width: 100%;
+    }
+
+    div#row-1 > section > a {
+        position: absolute;
+        top: 21em;
+        color: white;
+        text-decoration: none;
+        padding: .5em;
+        background: red;
+        border-radius: 1.5em;
+    }
+
+    div#row-1 > section > a:hover {
+        background: rgb(38, 0, 0);
+    }
+
+    /* row-2 colums */
+
+    div#row-2 > section#visionPoints > div {
+        width: 50%;
+        position: relative;
+        float: left;
+        padding: .5em 2em;
+    }
+
+    /* row-2 styles */
+
+    div#row-2 > section {
+        width: 45em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* cross reference link styles */
+    nav > ul > li#crossRef {
+        float: right;
+    }
+}
+
 /* Section Styles */
 
 section {
@@ -17,14 +227,15 @@ section {
     display: block;
 }
 
+/* background video */
+video#backgroundVideo {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 /* welcome tag styles */
 div.welcomeTag {
-    position: relative;
-    top: -30em;
-    margin-left: 2em;
-    width: 50em;
-    padding: 2em 0em;
-    margin-bottom: 2em;
     text-align: center;
     background-color: rgb(145, 61, 61);
     border: 5px double black;
@@ -45,59 +256,8 @@ div.welcomeTag > button#pauseButton:hover {
     background-color: white;
 }
 
-/* background video */
-video#backgroundVideo {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-/* row-1 styles */
-
-div#row-1 > section {
-    border: 3px double black;
-    position: relative;
-    width: 25em;
-    margin: 2em 2em;
-    height: 25em;
-}
-
-div#row-1 {
-    position: relative;
-    top: -5em;
-    z-index: 1;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-
-div#row-1 > section > h1 {
-    margin-bottom: .5em;
-    width: 100%;
-}
-
-div#row-1 > section > a {
-    position: absolute;
-    top: 21em;
-    color: white;
-    text-decoration: none;
-    padding: .5em;
-    background: red;
-    border-radius: 1.5em;
-}
-
-div#row-1 > section > a:hover {
-    background: rgb(38, 0, 0);
-}
 
 /* row-2 styles */
-
-div#row-2 > section {
-    width: 45em;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 div#row-2 > section#mainVision {
     border: 3px double black;
@@ -110,18 +270,4 @@ div#row-2 {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     background: rgb(218, 156, 156);
-}
-
-/* row-2 colums */
-
-div#row-2 > section#visionPoints > div {
-    width: 50%;
-    position: relative;
-    float: left;
-    padding: .5em 2em;
-}
-
-/* cross reference link styles */
-nav > ul > li#crossRef {
-    float: right;
 }

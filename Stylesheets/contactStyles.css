@@ -12,7 +12,7 @@
 /* Section Styles */
 
 section {
-    padding: 3em 8em;
+    margin: 2em 10%;
     display: block;
     overflow: hidden;
 }
@@ -35,7 +35,9 @@ section > form#createMsg > fieldset#sendMsg, section > div.contact {
     border-radius: 1em;
     width: 45%;
     float: left;
-    margin: 0em 1em 2em 1em;
+    margin: 0em 1em 2em 0em;
+    box-sizing: border-box;
+    min-width: 19em;
 }
 
 section > form#createMsg > fieldset#sendMsg > legend {
