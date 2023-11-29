@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector("nav > ul").style.display = "block";
         let str = "";
         if (document.title === "Home - Indigenous Clean Energy") {
-            str = "10em";
+            str = "18.75em";
         } else {
-            str = "9em";
+            str = "16.5em";
         }
         document.querySelector("nav").style.height = str;
     }

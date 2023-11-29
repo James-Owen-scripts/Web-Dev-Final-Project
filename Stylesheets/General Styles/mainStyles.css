@@ -83,6 +83,13 @@ a {
         display: none;
         width: 100%;
     }
+    /* nav styles */
+    nav > ul > li > a {
+        display: block;
+        text-align: center;
+        padding: 1em 1.5em;
+        height: .25em;
+    }
     nav > a#navicon > img {
         float: left;
         width: 25%;

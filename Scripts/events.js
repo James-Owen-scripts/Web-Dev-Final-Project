@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
          var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
          var seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-         events[i].innerHTML = "Date: " + eventDays[i] + "<br />Countdown: " + days + "-D: " + hrs + "-H: " + minutes + "-M: " + seconds + "-S " + "<br />";
+         events[i].innerHTML = "Date: " + eventDays[i] + "<br />Countdown: " + days + "D: " + hrs + "H: " + minutes + "M: " + seconds + "S<br />";
          if (diff < 0) {
             clearInterval(update);
-            events[i].innerHTML = "Expired";
+            events[i].innerHTML = "Date passed";
          }
       }
    }, 1000);

@@ -40,6 +40,7 @@ div.grid > div {
 p[id^="event"] {
     margin-top: 2em;
     margin-bottom: 2em;
+    color: red;
 }
 
 
