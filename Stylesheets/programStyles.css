@@ -30,20 +30,3 @@ div[class^="row-"] > dl > dt {
 div[class^="row-"] > dl > dd {
     font-size: 1.5em;
 }
-
-div[class^="row-"] > input[type="button"] {
-    margin: 1em 1em;
-    color: white;
-    height: 2em;
-    width: 6em;
-    background-color: red;
-    border: 2px solid rgb(95, 11, 11);
-    border-radius: 2em;
-    box-shadow: .25em .25em rgba(95, 11, 11, .7);
-
-}
-
-div[class^="row-"] > input[type="button"]:hover {
-    color: red;
-    background-color: white;
-}

@@ -5,10 +5,15 @@
    Filename: contact.js
 */
 
-// Listener for submit button
+// Listener for contact page
 document.addEventListener('DOMContentLoaded', () => {
+    // Listener for submit button
     let submitBtn = document.getElementById("submitBtn");
     submitBtn.addEventListener("click", validation);
+
+    // Listener for reset button
+    let resetBtn = document.getElementById("resetBtn");
+    resetBtn.addEventListener("click", resetEntrys);
 });
 
 // validate user input
@@ -18,15 +23,21 @@ function validation() {
     let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let msg = document.getElementById("msg").value;
+    // create audio variables for alerts
+    let negAlert = document.getElementById("negAudio");
+    let posAlert = document.getElementById("posAudio");
     let send = false;
     console.log(name);
     if (name === "") {
+        negAlert.play();
         alert("Name Required");
     }
     else if (email === "") {
+        negAlert.play();
         alert("Email Required");
     }
     else if (subject === "") {
+        negAlert.play();
         alert("Subject Required");
     }
     else {
@@ -40,9 +51,11 @@ function validation() {
             }
         }
         if (!send) {
+            negAlert.play();
             alert("Incorrect Email Entry");
         }
         else {
+            posAlert.play();
             alert("Message sent successfully.\nThank you " + name + "\nEmail: " + email + 
                 "\nSubject: " + subject + "\nMessage: " + msg);
 
@@ -52,4 +65,15 @@ function validation() {
             document.getElementById("msg").value = "";
         }
     }
+}
+
+function resetEntrys() {
+    // create audio variable for alert
+    let resAlert = document.getElementById("resAudio");
+    // play alert
+    resAlert.play();
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("msg").value = "";
 }

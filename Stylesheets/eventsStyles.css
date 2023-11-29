@@ -37,6 +37,11 @@ div.grid > div {
     border: 3px double black;
 }
 
+p[id^="event"] {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 
 /* mobile */
 @media only screen and (max-width: 480px) {

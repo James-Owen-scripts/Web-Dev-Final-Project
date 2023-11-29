@@ -8,7 +8,6 @@
    
 
 */
-
 /* mobile */
 @media only screen and (max-width: 480px) {
     /* welcome tag styles */
@@ -59,6 +58,7 @@
 
     div#row-1 > section > a:hover {
         background: rgb(38, 0, 0);
+        animation: spin 2s linear;
     }
 
     /* row-2 styles */
@@ -126,6 +126,7 @@
 
     div#row-1 > section > a:hover {
         background: rgb(38, 0, 0);
+        animation: spin 2s linear;
     }
 
     /* row-2 styles */
@@ -194,6 +195,7 @@
 
     div#row-1 > section > a:hover {
         background: rgb(38, 0, 0);
+        animation: spin 2s linear;
     }
 
     /* row-2 colums */
@@ -270,4 +272,11 @@ div#row-2 {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     background: rgb(218, 156, 156);
+}
+
+/* "a" styles hyperlink to other pages */
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(5deg);}
+    100%{transform: rotate(5deg);}
 }
