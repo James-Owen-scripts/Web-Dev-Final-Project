@@ -17,7 +17,8 @@
 /* HTML and body styles */
 html {
     font-family: 'Times New Roman', Times, serif;
-    background: rgb(83, 20, 20);
+    background-color: rgb(83, 20, 20);
+    background-color: hsla(4.54, 60.75%, 20.20%, 1);
 }
 body {
     margin-left: auto;
@@ -146,7 +147,7 @@ a {
         height: 3em;
     }
     
-    nav > a#navDrop {
+    nav > a:last-of-type {
         display: none;
     }
 
@@ -192,7 +193,7 @@ a {
         height: 3em;
     }
     
-    nav > a#navDrop {
+    nav > a:last-of-type {
         display: none;
     }
 
@@ -296,14 +297,19 @@ footer {
     width: 100%;
     color: white;
     background: rgb(105, 54, 54);
-    background: linear-gradient(90deg, rgb(255, 0, 0, 1), rgba(105, 54, 54, .5));
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(105, 54, 54, .5));
     text-align: center;
     font-size: 15pt;
     border: 3px solid rgb(61, 2, 2);
 }
 
-footer > ul#socials > li > a {
+footer > ul#socials > li > a:first-of-type {
     color: black;
+}
+
+footer p#lastUpdate {
+    font-size: .75em;
+    margin-top: 4em;
 }
 
 footer > ul#socials > li > a:hover {

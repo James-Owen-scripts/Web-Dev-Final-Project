@@ -20,7 +20,7 @@ section {
 section > div.topTxt {
     width: 19em;
     padding: 2em 0em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     text-align: center;
     background-color: rgb(145, 61, 61);
     border: 5px double black;
@@ -45,6 +45,7 @@ section > form#createMsg > fieldset#sendMsg > legend {
     color: black;
     font-weight: 800;
     font-size: 2em;
+    text-shadow: .25em -.0.1em rgba(37, 3, 3, 0.7);
 }
 
 /* form row styles */
@@ -120,6 +121,7 @@ div.contact > h1 {
     height: 100%;
     background-color: red;
     padding: .25em;
+    text-shadow: .25em -.0.1em rgba(37, 3, 3, 0.7);
 }
 
 div.contact > p {

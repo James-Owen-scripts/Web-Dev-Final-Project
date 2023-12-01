@@ -59,6 +59,7 @@ p[id^="event"] {
         height: auto;
         position: absolute;
         bottom: 2em;
+        opacity: .8;
     }
 }
 
@@ -77,6 +78,7 @@ p[id^="event"] {
         height: auto;
         position: absolute;
         bottom: 2em;
+        opacity: .8;
     }
 }
 
@@ -96,5 +98,6 @@ p[id^="event"] {
         height: auto;
         position: absolute;
         bottom: 2em;
+        opacity: .8;
     }
 }

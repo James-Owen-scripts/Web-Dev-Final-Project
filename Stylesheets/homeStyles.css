@@ -265,6 +265,18 @@ div#row-2 > section#mainVision {
     border: 3px double black;
     margin-top: 5em;
 }
+div#row-2 > section#mainVision > h2 {
+    margin-bottom: .5em;
+}
+
+div#row-2 > section#mainVision p:first-of-type::first-letter {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-right: .1em;
+    line-height: 2;
+    float: left;
+    clear: left;
+}
 
 div#row-2 {
     display: -webkit-flex;
