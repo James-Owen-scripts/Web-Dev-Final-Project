@@ -2,7 +2,7 @@
    Author: James Owen
    Date:   November 19th, 2023
 
-   Filename: main.js
+   Filename: home.js
 */
 
 // wait for document to load
